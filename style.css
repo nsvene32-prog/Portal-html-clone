@@ -1,6 +1,8 @@
 #loading {
   font-family: Monospace;
-  color: #33bb60
+  font-weight: bold;
+  font-size: 5em;
+  color: #33bb60;
   display: grid;
   place-items: center;
   min-height: 100vh; /* Takes up the full height of the screen */
