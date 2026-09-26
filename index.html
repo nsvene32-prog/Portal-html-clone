@@ -6,14 +6,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="loading">
-    <progress id="load_progress" value="0" max="100"></progress>
-    <h1 id="load_text">LOADING...</h1>
+  <div id="menu">
+    <button id="newgame" class="menubutton">New game (will wipe your saves away)</button>
+    <button id="resume" class="menubutton">Resume from last save</button>
   </div>
-
   <canvas id="bg"></canvas>
-
-  <script src="loadingbar.js"></script>
+  <script src="loadmodels.js"></script>
   <script type="module" src="main.js"></script>
-</body>
+  </body>
 </html>
