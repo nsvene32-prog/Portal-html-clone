@@ -1,9 +1,19 @@
-#loading {
-  font-family: Monospace;
-  font-weight: bold;
-  font-size: 5em;
-  color: #33bb60;
-  display: grid;
-  place-items: center;
-  min-height: 100vh; /* Takes up the full height of the screen */
+#menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-image: url('image.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.menubutton {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  /* Add any other styling you want for the buttons */
 }
