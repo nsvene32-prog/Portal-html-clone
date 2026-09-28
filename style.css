@@ -1,6 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -9,30 +16,26 @@
 }
 
 #bgcontainer {
+  position: fixed;
+  inset: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; /* Hides any pixel overflow */
+  overflow: hidden;
+  z-index: 0;
 }
 
-/* Force the image to cover the screen perfectly while remaining centered */
-#bgcontainer img {
+#bgimage {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Centers and crops the image to fill the container */
-}
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
 }
 
 #menu {
   position: fixed;
-  bottom: 0;
   left: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -46,8 +49,7 @@ html, body {
   padding: 10px;
   font-size: 1em;
   cursor: pointer;
-  border: 2px;
-  border-color: #FB7E14;
+  border: 2px solid #fb7e14;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   border-radius: 5px;
