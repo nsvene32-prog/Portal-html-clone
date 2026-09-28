@@ -8,11 +8,21 @@
   display: none;
 }
 
-#bgimage {
-  width: 50%;
-  height: 50%;
+#bgcontainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hides any pixel overflow */
 }
 
+/* Force the image to cover the screen perfectly while remaining centered */
+#bgcontainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Centers and crops the image to fill the container */
+}
 html, body {
   width: 100%;
   height: 100%;
